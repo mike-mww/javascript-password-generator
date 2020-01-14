@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> <%= htmlWebpackPlugin.options.title %> </title>
+    <meta name="viewport" content="width=device-width,initial- scale=1">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="content-wrap">
+                <div class="title">
+                    <h1>Password Generator</h1>
+                </div>
+
+                <div class="settings">
+                    <div class="setting">
+                        <label for="password-length">Password length</label>
+                        <input id="password-length" type="number" min="6" max="24" value="12" />
+                    </div>
+
+                    <div class="setting">
+                        <label for="password-lowercase">Include lowercase letters</label>
+                        <input id="password-lowercase" type="checkbox" checked />
+                    </div>
+
+                    <div class="setting">
+                        <label for="password-uppercase">Include uppercase letters</label>
+                        <input id="password-uppercase" type="checkbox" checked />
+                    </div>
+
+                    <div class="setting">
+                        <label for="password-numbers">Include numbers</label>
+                        <input id="password-numbers" type="checkbox" checked />
+                    </div>
+
+                    <div class="setting">
+                        <label for="password-symbols">Include symbols</label>
+                        <input id="password-symbols" type="checkbox" checked />
+                    </div>
+
+                    <button id="generate-btn" class="button">Generate Password</button>
+                </div>
+
+                <div class="result-container">
+                    <span id="result"></span>
+                    <button id="copy-btn" class="button" title="Copy to Clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="credits">
+                <a href="https://github.com/mike-mww/javascript-password-generator" target="_blank">
+                    <i class="fab fa-github icon"></i>
+                    <span>Fork on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</html>
