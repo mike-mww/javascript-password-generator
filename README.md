@@ -1,7 +1,7 @@
 # JavaScript Password Generator
 Simple JavaScript application for generating passwords.
 
-[View Demo](https://agile-thicket-38340.herokuapp.com/)
+[View Demo](https://mike-mww-38340.herokuapp.com/)
 
 ## Getting Started
 ### Prerequisities
